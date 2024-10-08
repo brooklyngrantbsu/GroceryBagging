@@ -1,0 +1,6 @@
+4
+7
+apples 2
+lima_beans 1 + apples
+cheese 1 + apples
+milk 2 - lima_beans
