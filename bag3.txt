@@ -1,0 +1,5 @@
+5
+7
+tomatoes 3
+bread 3 + tomatoes
+meat 1 - tomatoes

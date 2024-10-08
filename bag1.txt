@@ -1,0 +1,6 @@
+5
+10
+meat 5
+tomatoes 3 + meat
+rolls 5 - meat
+bread 5 + meat

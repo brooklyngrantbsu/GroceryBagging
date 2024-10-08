@@ -1,0 +1,5 @@
+5
+9
+yogurt 4
+apples 2 + yogurt
+tomatoes 3 - apples
