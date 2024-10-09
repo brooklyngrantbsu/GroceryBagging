@@ -1,0 +1,12 @@
+2              
+10                  
+bread  3 + rolls    
+rolls  2 + bread    
+squash 3 - meat   
+meat   5            
+lima_beans 1 - meat
+yogurt 6 - cheese
+cheese 4
+apples 10 - milk
+milk 1
+tomatoes 9 + milk

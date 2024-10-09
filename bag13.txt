@@ -1,0 +1,7 @@
+2
+5
+meat 3
+apples 5 - meat
+bread 2 + meat
+tomatoes 2 - apples
+squash 5 - bread

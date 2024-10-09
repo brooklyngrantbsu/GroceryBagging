@@ -1,0 +1,5 @@
+5
+9
+meat 5
+yogurt 1 - meat
+squash 4 - yogurt

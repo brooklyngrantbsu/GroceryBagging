@@ -1,0 +1,7 @@
+4
+10
+apples 5
+bread 5 - apples
+tomatoes 4 - bread
+meat 5 + bread
+milk 5 - bread
