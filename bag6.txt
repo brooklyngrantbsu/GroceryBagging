@@ -1,0 +1,5 @@
+2
+8
+apples 2
+meat 3 - apples
+lima_beans 2 + meat

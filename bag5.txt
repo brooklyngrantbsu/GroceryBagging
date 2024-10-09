@@ -1,0 +1,7 @@
+3
+10
+lima_beans 1
+milk 2 - lima_beans
+squash 3 - milk
+meat 3 + squash
+rolls 2 + lima_beans

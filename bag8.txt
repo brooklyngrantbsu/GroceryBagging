@@ -1,0 +1,6 @@
+3
+5
+apples 3
+milk 2 + apples
+lima_beans 1 - apples
+yogurt 4 + lima_beans

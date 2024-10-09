@@ -1,0 +1,8 @@
+3
+5
+tomatoes 2
+apples 1 + tomatoes
+cheese 1 - tomatoes
+squash 3 - cheese
+meat 3 + squash
+milk 3 - meat

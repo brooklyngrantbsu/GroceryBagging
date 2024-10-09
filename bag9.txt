@@ -1,0 +1,6 @@
+2
+6
+rolls 4
+apples 4 + rolls
+meat 1 + rolls
+squash 2 - apples
