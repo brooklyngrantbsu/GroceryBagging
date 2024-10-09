@@ -149,7 +149,8 @@ public class BaggingProblem {
 
         for (Bag b : bags) {
             if (b.pack(i)) {
-                if(search(pq)) {
+                if (search(pq)) {
+
                     return true; // worked in this bag!
                 } else {
                     // that item didn't work in the bag
@@ -159,7 +160,7 @@ public class BaggingProblem {
             }
         }
 
-
+        pq.add(i);
         return false; // failed, item cannot go in any bag
 
     }
@@ -176,7 +177,7 @@ public class BaggingProblem {
     }
 
     public String printPacking() {
-        // This method will only be called on success
+        // This method will only be called on success    
         StringBuilder result = new StringBuilder("success\n");
     
         for (Bag b : bags) {
@@ -190,6 +191,7 @@ public class BaggingProblem {
             }
             result.append("\n"); // next line
         }
+        System.out.println(result);
         return result.toString();
     }       
 
