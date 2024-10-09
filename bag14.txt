@@ -1,0 +1,6 @@
+3
+9
+squash 5
+yogurt 1 + squash
+apples 5 - squash
+rolls 3 - squash
