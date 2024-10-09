@@ -32,8 +32,7 @@ public class BaggingProblem {
                 return this.numConstraints - i.numConstraints;
             }
 
-            return i.size - this.size; // if this is wrong then it is slower
-            //return this.size - i.size;
+            return i.size - this.size;
         }
 
         
@@ -176,21 +175,22 @@ public class BaggingProblem {
         return search(pq);
     }
 
-    public void printPacking() {
+    public String printPacking() {
         // This method will only be called on success
-        System.out.println("success");
+        StringBuilder result = new StringBuilder("success\n");
     
         for (Bag b : bags) {
             boolean firstItem = true;
             for (Item i : b.packedInMe.values()) {
                 if (!firstItem) { // don't put tab before first item
-                    System.out.print("\t");
+                    result.append("\t");
                 }
-                System.out.print(i.name);
+                result.append(i.name);
                 firstItem = false;
             }
-            System.out.println(); // next line
+            result.append("\n"); // next line
         }
+        return result.toString();
     }       
 
 }
