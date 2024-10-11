@@ -7,15 +7,17 @@ make
 # loop through bag files 0 to 15
 for i in {0..15}
 do
-    echo "Test File $i:"
-    outputBagit=$(./bagit.sh "bag$i.txt")
+    filename="bag$i.txt"
+    
+    echo "Testing File $filename:"
+    outputBagit=$(./bagit.sh "$filename")
     echo "$outputBagit"
     
     # Check if the output contains the word "failure"
     if echo "$outputBagit" | grep -q "failure"; 
     then
-        echo "Bagging failed for bag$i.txt. See if this is supposed to fail with cspsolve."
-        outputCSPSolve=$(./cspsolve "bag$i.txt")
+        echo "Bagging failed for $filename. See if this is supposed to fail with cspsolve."
+        outputCSPSolve=$(./cspsolve "$filename")
         echo "cspsolve output: $outputCSPSolve"
 
         if echo "$outputCSPSolve" | grep -q "failure";
@@ -27,7 +29,7 @@ do
 
     else
         # Run CheckBag.jar if successful
-        outputCheckBag=$(java -jar CheckBag.jar "bag$i.txt" "bag$i.txt.out")
+        outputCheckBag=$(java -jar CheckBag.jar "$filename" "$filename.out")
         echo "checkbag output: $outputCheckBag"
 
         if echo "$outputCheckBag" | grep -q "Good solution!";
